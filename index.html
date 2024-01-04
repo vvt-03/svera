@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="mini project.css">
+<title>mini project</title>
+</head>
+<body> 
+<header>
+    <img src="D:\1st yr\1st sem\IWD\Svera\svera logo.png"  alt="svera logo" class="img">
+</header>
+
+<div class="navbar">
+    <a href="svera(home).html">Home</a>
+    <a href="svera(what we do).html">What we do</a>
+    <a href="svera(about us).html">About Us</a>
+    <a href="svera(contact us).html">Contact Us</a>
+    
+  </div>
+<section>
+  <div class="image-container">
+    <a href="svera(what we do).html#weddings">
+      <img class="hpics" src="D:\1st yr\1st sem\IWD\Svera\weddings.jpeg" alt="weddings">
+      <div class="centered">WEDDINGS</div>
+    </a>
+  </div>
+
+  <div class="image-container">
+    <a href="svera(what we do).html#corp_events">
+      <img class="hpics" src="D:\1st yr\1st sem\IWD\Svera\corporate events.jpeg" alt="corporate events">
+      <div class="centered">CORPORATE EVENTS</div>
+    </a>
+  </div>
+
+  <div class="image-container">
+    <a href="svera(what we do).html#leisure_events">
+      <img class="hpics" src="D:\1st yr\1st sem\IWD\Svera\leisure events.jpeg" alt="leisure events">
+      <div class="centered">LEISURE EVENTS</div>
+    </a>
+  </div>
+
+  <div class="image-container">
+    <a href="svera(what we do).html#social_events">
+      <img class="hpics" src="D:\1st yr\1st sem\IWD\Svera\social events.jpeg" alt="social events">
+      <div class="centered">SOCIAL EVENTS</div>
+    </a>
+  </div>
+
+  <div class="image-container">
+    <a href="svera(what we do).html#cultural_events">
+      <img class="hpics" src="D:\1st yr\1st sem\IWD\Svera\cultural events.jpeg" alt="cultural events">
+      <div class="centered">CULTURAL EVENTS</div>
+    </a>
+  </div>
+</section>
+
+
+    <script>
+     var myIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("hpics");
+    var captions = document.getElementsByClassName("centered");
+    
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+      captions[i].style.display = "none";
+    }
+    
+    myIndex++;
+    
+    if (myIndex > x.length) {
+      myIndex = 1;
+    }
+    
+    x[myIndex - 1].style.display = "block";
+    captions[myIndex - 1].style.display = "block";
+    
+    setTimeout(carousel, 3000);
+  } 
+      </script>
+ 
+  <footer class="footer">
+    <p>&copy; 2023 Svera Celebrations. All rights reserved.</p>
+    <a href="#">Terms of Service | Privacy Policy</a>
+  </footer>
+
+</body>
+</html>

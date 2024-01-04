@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="mini project.css">
+<title>mini project</title>
+</head>
+<body> 
+<header>
+    <img src="D:\1st yr\1st sem\IWD\Svera\svera logo.png"  alt="svera logo" class="img">
+</header>
+<nav>
+<div class="navbar">
+    <a href="svera(home).html">Home</a>
+    <a href="svera(what we do).html">What we do</a>
+    <a href="svera(about us).html">About Us</a>
+    <a href="svera(contact us).html">Contact Us</a>
+    
+  </div>
+</nav>
+<h1 style="color: yellow;font-size: xx-large;text-align: center;text-decoration: underline;padding: 5px;">HELP DESK</h1>
+<br>
+<p style="color: white;font-size: larger;text-align: center;">We would love to hear your queries,feedbacks and additional requests.Do so by filling out the form below.</p>
+<div class="register">
+  <form action="#" method="post" onsubmit="displayMessage(event)">
+    <input type="text" id="textbox" name="textbox" placeholder="Queries/Feedback/Additional requests">
+    <label for="fullName"></label>
+    <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+
+    <label for="email"></label>
+    <input type="email" id="email" name="email" placeholder="E-mail Id" required>
+
+    <label for="phone"></label>
+    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+    <br>
+    <input type="submit" id="Submit" value="Submit">
+    <div id="message" style="color:white;">Thank you for filling!! We are excited to collaborate with you and will be in touch soon.</div>
+    <script>
+        function displayMessage(event) {
+            
+           event.preventDefault();
+           var messageDiv = document.getElementById("message");
+            messageDiv.style.backgroundColor = "black";
+            messageDiv.style.display = "block";
+        }
+    </script>
+</form>
+
+  
+    
+  
+    
+    </div>
+<div class="sns">
+  <br> <br> 
+  <p style="color: white;text-align: center;font-size: x-large;">CONTACT US: +91 9876543210</p>
+  <p style="color: white;text-align: center;font-size: x-large;">OUR E-MAIL: svera.celebrations@gmail.com</p>
+  <p style="color: white;text-align: center;font-size: x-large;">OUR ADDRESS:<a style="text-decoration: none" href=https://www.google.co.in/maps/place/RV+University/@12.923315,77.4296721,13z/data=!4m10!1m2!2m1!1sr+v+college+of+engineering!3m6!1s0x3bafad1d6f18a4b9:0xc6082c1a24eba0bf!8m2!3d12.923315!4d77.4997099!15sChpyIHYgY29sbGVnZSBvZiBlbmdpbmVlcmluZ1obIhlydiBjb2xsZWdlIG9mIGVuZ2luZWVyaW5nkgEKdW5pdmVyc2l0eZoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VNeWVVNUlTVXAzRUFF4AEA!16s%2Fg%2F11qyq89ldm?entry=ttu"> Mysore Rd, RV Vidyaniketan, Post, Bengaluru, Karnataka 560059</a>
+  </p>
+  <p style="color: white;text-align: center;font-size: x-large;">ALSO FOLLOW US ON: </p>
+  <p style="color: white;text-align: center;font-size:large;"> Instagram:
+    <a href="https://www.instagram.com/">svera_celebrations</a>
+  </p>
+  <p style="color: white;text-align: center;font-size:large;"> Facebook:
+    <a href="https://www.facebook.com/">Svera Celebrations</a>
+  </p>
+</div>
+<br> <br> <br>
+  <footer class="footer">
+    <p>&copy; 2023 Svera Celebrations. All rights reserved.</p>
+    <a href="#">Terms of Service | Privacy Policy</a>
+  </footer>
+  </body>
+  </html>
